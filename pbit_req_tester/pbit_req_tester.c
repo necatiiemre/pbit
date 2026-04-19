@@ -12,12 +12,12 @@
 // ============================================================================
 #define IFACE          "eno12409"   // egress interface
 #define VL_ID          15           // decimal — 15 = VS REQ, 12 = FLCS REQ
-#define VLAN_ID        100          // decimal — set to -1 for untagged frame
+#define VLAN_ID        97           // decimal — set to -1 for untagged frame
 #define VLAN_PRIO      0            // 802.1Q PCP (0..7)
 
-#define SEQ_TAIL       0            // 0 = no tail, 1 = one byte, 8 = uint64
+#define SEQ_TAIL       1            // 0 = no tail, 1 = one byte (DTN_SEQ), 8 = uint64
 #define SEQ_HEAD       0            // 1 = also put 8B seq at start of payload
-#define SEQ_START      0            // starting seq value
+#define SEQ_START      0            // starting DTN_SEQ value
 
 #define MSG_LEN        11           // PBIT header.message_len field
 #define INTERVAL_SEC   10           // send one packet every N seconds
