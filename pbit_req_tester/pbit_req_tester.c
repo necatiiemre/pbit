@@ -11,8 +11,8 @@
 //                         EDIT THESE AND REBUILD
 // ============================================================================
 #define IFACE          "eno12409"   // egress interface
-#define VL_ID          0x000F       // 0x000F = VS REQ, 0x000C = FLCS REQ
-#define VLAN_ID        100          // set to -1 for untagged frame
+#define VL_ID          15           // decimal — 15 = VS REQ, 12 = FLCS REQ
+#define VLAN_ID        100          // decimal — set to -1 for untagged frame
 #define VLAN_PRIO      0            // 802.1Q PCP (0..7)
 
 #define SEQ_TAIL       0            // 0 = no tail, 1 = one byte, 8 = uint64
